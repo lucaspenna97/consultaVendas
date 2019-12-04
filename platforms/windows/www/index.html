@@ -1,0 +1,54 @@
+﻿<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="onsenUI/onsenui.css">
+    <link rel="stylesheet" href="onsenUI/onsen-css-components.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script src="onsenUI/onsenui.min.js"></script>
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="mask/jquery.mask.min.js"></script>
+
+    <title>@ngulo Fidelidade</title>
+
+</head>
+
+<body>
+
+    <ons-page>
+      <div id="divPrincipal">
+
+        <p><ons-input input-id="cpf" placeholder="CPF" modifier="underbar" type="text" float></ons-input></p>
+        <br><br>
+
+        <p><ons-input input-id="senha" placeholder="Senha" modifier="underbar" type="password" float></ons-input></p>
+        <br>
+
+
+        <ons-checkbox input-id="togglePassword" onclick="mostrarSenha()" ></ons-checkbox>
+        <div id="senha" style="font-style: italic;">
+          <label>Mostrar Senha</label>
+        </div>
+
+        <br><br>
+        <p><ons-button id="entrar" value="Entrar" style="width:120px" onclick="entrar()">Entrar</ons-button></p>
+        <br>
+
+        <p><ons-button modifier="quiet" id="cadastrarNovo" onclick="cadastrarNovo()">Cadastrar Novo</ons-button></p>
+        <p><ons-button modifier="quiet" id="recuperarSenha" onclick="recuperarSenha()">Esqueci minha senha</ons-button></p>
+
+      </div>
+    </ons-page>
+
+
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript">app.initialize();</script>
+
+</body>
+
+</html>

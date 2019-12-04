@@ -1,0 +1,56 @@
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="onsenUI/onsenui.css">
+    <link rel="stylesheet" href="onsenUI/onsen-css-components.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script src="onsenUI/onsenui.min.js"></script>
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="mask/jquery.mask.min.js"></script>
+
+    <title>@ngulo Fidelidade</title>
+</head>
+
+ <body>
+
+  <ons-page>
+    <div id="informacoesAdicionais">
+
+      <ons-input input-id="cpf" placeholder="CPF" modifier="underbar" type="text" float></ons-input>
+      <br><br><br>
+
+      <ons-input input-id="dataNascimento" type="text" placeholder="Data de Nascimento" modifier="underbar" float ></ons-input>
+      <br><br>
+
+      <ons-select id="genero" onchange="genero" placeholder="Gênero">
+         <option value="feminino">Feminino</option>
+         <option value="masculino">Masculino</option>
+         <option value="outros">Outros</option>
+      </ons-select>
+      <br><br><br>
+
+      <ons-input input-id="email" type="text" placeholder="E-mail" maxlength="30" modifier="underbar" float></ons-input>
+      <br><br><br>
+
+      <ons-input input-id="celular" type="tel" placeholder="Celular" modifier="underbar" float></ons-input>
+
+      <br><br>
+      <p style="margin-top:30px">
+      <ons-button  id="salvar" onclick="salvar()" style="width:150px"/>Salvar</ons-button>
+      </p>
+
+    </div>
+  </ons-page>
+
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/informacoesAdicionais.js"></script>
+
+ </body>
+
+</html>

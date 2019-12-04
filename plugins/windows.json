@@ -1,0 +1,49 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-battery-status": {
+      "PACKAGE_NAME": "AnguloFidelidade"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "AnguloFidelidade"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "AnguloFidelidade"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "AnguloFidelidade"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "AnguloFidelidade"
+    },
+    "cordova-plugin-globalization": {
+      "PACKAGE_NAME": "AnguloFidelidade"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "AnguloFidelidade"
+    },
+    "cordova-plugin-media-capture": {
+      "PACKAGE_NAME": "AnguloFidelidade"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "AnguloFidelidade"
+    },
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "AnguloFidelidade"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "AnguloFidelidade"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "AnguloFidelidade"
+    }
+  }
+}
