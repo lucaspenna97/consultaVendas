@@ -37,10 +37,13 @@ function enviarEmail(email, senha){
 
     //https://www.smtpjs.com/
     Email.send({
-        SecureToken : "f75da5e4-e27c-49fc-8ee1-8d1a8164e180",
+
+        Host : "smtp.gmail.com",
+        Username : "lucaspenna97@gmail.com",
+        Password : "zonk02031997",
         To : email,
-        From : "suporte.angulo@terra.com.br",
-        Subject : "Recuperação de Senha - Aplicativo Pontos Fidelidade",
+        From : "lucaspenna97@gmail.com",
+        Subject : "Recuperação de Senha",
         Body : "<div>" +
                   "<div>" +
                   "<div marginwidth='0' marginheight='0' style='margin:0; padding:0; height:100%; width:100%; background-color:#f7f7f7'>" +
@@ -65,7 +68,7 @@ function enviarEmail(email, senha){
                   "</tr>" +
                   "<tr>" +
                   "<td>" +
-                  "<p align='center'>Recuperação de Senha - Aplicativo Pontos Fidelidade</p>" +
+                  "<p align='center'>Recuperação de Senha</p>" +
                   "</td>" +
                   "</tr>" +
                   "<tr>" +
@@ -88,8 +91,6 @@ function enviarEmail(email, senha){
                   "<tr align='center'>" +
                   "<td class='x_m_-2680750805771968212closing' style='font-family:Helvetica,Arial,sans-serif; line-height:160%; margin-bottom:0; padding-bottom:0; text-align:center'>" +
                   "<p class='x_m_-2680750805771968212closing' style='margin:0; margin-bottom:0; padding-bottom:0'>" +
-                  "Atenciosamente,<br>" +
-                  "Depto de Suporte @ngulo Sistemas</p>" +
                   "</td>" +
                   "</tr>" +
                   "</tbody>" +
@@ -100,15 +101,9 @@ function enviarEmail(email, senha){
                   "<td class='x_m_-2680750805771968212footerContent' style='font-family:Helvetica,Arial,sans-serif; line-height:160%; background:#ffffff'>" +
                   "<table border='0' cellpadding='0' cellspacing='0' width='100%' id='x_m_-2680750805771968212templateFooter' style='border-collapse:collapse; background-color:#ffffff'>" +
                   "<tbody>" +
-                  "<tr>" +
-                  "<td class='x_m_-2680750805771968212contact' style='font-family:Helvetica,Arial,sans-serif; line-height:160%; padding-bottom:16px; text-align:center; margin-top:32px; padding-left:12%; padding-right:12%'>" +
-                  "<p style='margin:0; color:#666; font-size:13px'>Em caso de qualquer dúvida, fique à vontade para responder esse e-mail ou nos contatar no <a href='mailto:angulosistemas@uol.com.br' target='blank' rel='noopener noreferrer' data-auth='NotApplicable' class='x_m_-2680750805771968212footer-link' style='text-decoration:underline; font-weight:bold'>angulosistemas@uol.com.br</a>.</p>" +
-                  "</td>" +
                   "</tr>" +
                   "<tr>" +
                   "<td style='font-family:Helvetica,Arial,sans-serif; line-height:160%; padding-bottom:16px; text-align:center'>" +
-                  "<p class='x_m_-2680750805771968212spaceM' style='margin:0; padding-bottom:16px; color:#bbbaba; font-size:13px'>" +
-                  "Angulo Sistemas 2019</p>" +
                   "<span class='x_m_-2680750805771968212hidden' style='color:#ffffff; font-size:0; height:0'></span></td>" +
                   "</tr>" +
                   "</tbody>" +

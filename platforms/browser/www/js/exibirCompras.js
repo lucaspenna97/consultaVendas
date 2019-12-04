@@ -7,7 +7,7 @@ $(function() {
      //Ajax para recebimento
      $.ajax({
          crossDomain:true,
-         url:"http://anguloconsulta.com.br:9090/overwatch",
+         url:"http://anguloconsulta.com.br:9090/teste",
          contentType:'application/json',
          type: "GET",
          success: function(response){
@@ -39,12 +39,12 @@ $(function() {
         "<div class='lista' id='item" + i +"'>" +
             "<p>" +
             "<span class='esquerda'>21/03/2019</span> " +
-            "<span class='direita'>Valor da Compra: R$ 120,00</span>" +
+            "<span class='direita'>Valor da Compra: R$ 99,90</span>" +
             "</p><br>" +
 
             "<p>" +
-            "<span class='esquerda'>Rede Goya</span>" +
-            "<span class='direita' style='font-weight:bold; color:green;' >Pontos Ganhos: + 16,50</span>" +
+            "<span class='esquerda'>Nome Loja</span>" +
+            "<span class='direita' style='font-weight:bold; color:green;' >Pontos Ganhos: + 99,90</span>" +
             "</p>" +
         "</div><br>" +
         "<hr>";
@@ -54,17 +54,17 @@ $(function() {
         p.innerHTML=
         "<div class='lista' id='item" + i +"'>" +
             "<p>" +
-            "<span class='esquerda'>21/03/2019</span> " +
-            "<span class='direita'>Valor da Compra: R$ 120,00</span>" +
+            "<span class='esquerda'>DD/MM/AAAA</span> " +
+            "<span class='direita'>Valor da Compra: R$ 99,90</span>" +
             "</p><br>" +
 
             "<p>" +
-            "<span class='esquerda'>Rede Goya</span>" +
-            "<span class='direita' style='font-weight:bold; color: green;'>Pontos Ganhos: + 16,50</span>" +
+            "<span class='esquerda'>Nome Loja</span>" +
+            "<span class='direita' style='font-weight:bold; color: green;'>Pontos Ganhos: + 99,90</span>" +
             "</p>" +
 
             "<br><p>" +
-            "<span class='direita' style='font-weight:bold; color: red;'>Resgate: - 16,50</span>" +
+            "<span class='direita' style='font-weight:bold; color: red;'>Resgate: -99,90</span>" +
             "</p>" +
         "</div><br>"+
         "<hr>";
@@ -74,20 +74,9 @@ $(function() {
       var item = document.getElementById("item" + i);
          item.addEventListener("click", function(){
          navigator.vibrate(30);
-         var dados = JSON.stringify(response);
-         sessionStorage.setItem('data', dados );
-         window.location.href = "detalhesCompras.html";
         })
     }
 }
-
-
-
-
-function informacoesAdicionais(){
-     window.location.href = "informacoesAdicionais.html";
-}
-
 
 function semInformacao(){
    var mensagem = document.createElement('label');
